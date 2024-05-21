@@ -1,0 +1,118 @@
+section.introducing {
+  background-image: url(https://coffeeroasters-subscription-site-zeta.vercel.app/assets/about/desktop/image-hero-whitecup.jpg);
+}
+
+section.commitment {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  section.commitment {
+    flex-direction: row;
+    gap: 100px;
+    text-align: left;
+  }
+}
+section.commitment > div {
+  width: 100%;
+}
+section.commitment .img-part img {
+  border-radius: 12px;
+  max-width: 100%;
+}
+section.commitment .info-part {
+  color: #2c343e;
+}
+section.commitment .info-part p {
+  line-height: 1.5rem;
+}
+@media (min-width: 992px) {
+  section.commitment .info-part p {
+    width: 80%;
+  }
+}
+
+section.quality {
+  display: flex;
+  position: relative;
+  margin-bottom: 10rem;
+  margin-top: 22rem;
+  padding: 5rem 2.5rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #2c343e;
+}
+@media (min-width: 992px) {
+  section.quality {
+    margin-top: 10rem;
+    padding: 5rem;
+  }
+}
+section.quality .info-part {
+  padding-top: 6rem;
+  color: white;
+}
+@media (min-width: 992px) {
+  section.quality .info-part {
+    width: 40%;
+    padding-top: 0;
+  }
+}
+section.quality .info-part p {
+  line-height: 1.5rem;
+  color: #9ea1a3;
+}
+@media (max-width: 767px) {
+  section.quality .info-part h1 {
+    font-size: 1.5rem;
+  }
+}
+section.quality .img-part {
+  background-image: url(https://coffeeroasters-subscription-site-zeta.vercel.app/assets/about/tablet/image-quality.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  border-radius: 8px;
+  top: -10rem;
+  width: 90%;
+  height: 20rem;
+  right: 5%;
+}
+@media (min-width: 992px) {
+  section.quality .img-part {
+    bottom: 4rem;
+    right: 5rem;
+    width: 27rem;
+    height: 29rem;
+  }
+}
+
+section.headquarters {
+  margin-bottom: 10rem;
+}
+section.headquarters > h2 {
+  color: #83888f;
+}
+section.headquarters .headquarters-list {
+  margin-top: 5rem;
+  display: flex;
+  gap: 70px;
+}
+section.headquarters .headquarters-list .headquarter {
+  color: #2c343e;
+}
+section.headquarters .headquarters-list .headquarter li {
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  section.headquarters .headquarters-list {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,281 @@
+@import "varaibles";
+
+body.black-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000063;
+  z-index: 9;
+}
+section.introducing {
+  background: {
+    image: url(https://coffeeroasters-subscription-site-zeta.vercel.app/assets/plan/desktop/image-hero-blackcup.jpg);
+  }
+  p {
+    @media (min-width: $minMedium) {
+      width: 70%;
+    }
+    line-height: 1.5rem;
+  }
+}
+section.how-it-works {
+  background-color: $navy-color;
+  padding: 40px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  .skills {
+    color: white;
+  }
+}
+section.questions {
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .lists {
+    @media (min-width: $minMedium) {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 100px;
+    }
+    .catacories {
+      display: none;
+      @media (min-width: $minMedium) {
+        width: 30%;
+        display: block;
+      }
+
+      li:not(:last-of-type) {
+        h2 {
+          border-bottom: 1px solid #c0c2c3;
+        }
+      }
+      h2 {
+        color: #c0c2c3;
+        padding: 20px 0;
+        transition: $main-transition;
+        -webkit-transition: $main-transition;
+        -moz-transition: $main-transition;
+        -ms-transition: $main-transition;
+        -o-transition: $main-transition;
+      }
+      a {
+        color: #c0c2c3;
+        margin-left: 20px;
+        transition: $main-transition;
+        -webkit-transition: $main-transition;
+        -moz-transition: $main-transition;
+        -ms-transition: $main-transition;
+        -o-transition: $main-transition;
+      }
+      li:hover {
+        a,
+        h2 {
+          color: #83888f;
+          border-color: #83888f;
+        }
+      }
+    }
+    .questions-list {
+      @media (min-width: $minMedium) {
+        width: calc(70% - 100px);
+      }
+      li {
+        margin-bottom: 25px;
+      }
+      li .text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        h1 {
+          line-height: 3rem;
+          color: $grey-color;
+          max-width: 80%;
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+          @media (max-width: $maxMobile) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: $minSmall) {
+            font-size: 2rem;
+          }
+          @media (min-width: $minMedium) {
+            font-size: 2.5rem;
+          }
+        }
+        &:hover {
+          h1 {
+            color: $navy-color;
+          }
+        }
+        img {
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+          &.rotated {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+          }
+        }
+      }
+      li:first-of-type {
+        h1 {
+          margin-top: 0;
+        }
+      }
+      .choices {
+        transition: $main-transition;
+        -webkit-transition: $main-transition;
+        -moz-transition: $main-transition;
+        -ms-transition: $main-transition;
+        -o-transition: $main-transition;
+        display: none;
+        gap: 20px;
+
+        @media (max-width: $maxMobile) {
+          flex-direction: column;
+        }
+        &.slide-down {
+          display: flex;
+        }
+        .choice {
+          padding: 15px;
+          @media (max-width: $maxMobile) {
+            padding: 25px;
+          }
+          border-radius: 8px;
+          background-color: #f4f1eb;
+          color: $navy-color;
+          cursor: pointer;
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+          &:hover {
+            background-color: $pink-color;
+          }
+          h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            @media (min-width: $minSmall) {
+              margin-top: 15px;
+            }
+          }
+          p {
+            @media (min-width: $minSmall) {
+              margin-bottom: 70px;
+            }
+            line-height: 1.5rem;
+          }
+          &.active {
+            background-color: $green-color;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .summary {
+    padding: 1.75rem 4rem;
+    background-color: #2c343e;
+    border-radius: 8px;
+    @media (min-width: $minMedium) {
+      width: calc(70% - 100px);
+      margin-left: auto;
+    }
+    @media (max-width: $maxMobile) {
+      padding: 2rem 1.5rem;
+    }
+    p {
+      color: $grey-color;
+    }
+    h2 {
+      color: white;
+      margin-top: 30px;
+      line-height: 2.5rem;
+      span {
+        color: $green-color;
+      }
+    }
+  }
+  button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    @media (min-width: $minMedium) {
+      margin: 0;
+      margin-left: auto;
+      margin-top: 20px;
+    }
+  }
+}
+.order-summary {
+  position: absolute;
+  max-width: 540px;
+  width: 0;
+  transition: $main-transition;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75%;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transition: $main-transition;
+  -moz-transition: $main-transition;
+  -ms-transition: $main-transition;
+  -o-transition: $main-transition;
+  z-index: 10;
+  &.show {
+    width: 100%;
+  }
+  h1.title {
+    color: white;
+    background-color: $navy-color;
+    padding: 40px;
+    margin: 0;
+  }
+  .info {
+    padding: 40px;
+    background-color: white;
+    h2 {
+      color: $grey-color;
+      span {
+        color: $green-color;
+      }
+    }
+    p {
+      margin: 25px 0;
+      color: $navy-color;
+    }
+    h1 {
+      color: $navy-color;
+    }
+    .checkout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      @media (max-width: $maxMobile) {
+        flex-direction: column;
+      }
+    }
+  }
+}
